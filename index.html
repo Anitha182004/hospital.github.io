@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏥 Hospital Finder</h1>
+    <p>Find hospitals by department or service</p>
+  </header>
+
+  <section class="search-section">
+    <input type="text" id="searchBox" placeholder="Search by department (e.g., Cardiology)" onkeyup="filterHospitals()">
+  </section>
+
+  <main id="hospitalList">
+    <div class="hospital-card" data-dept="cardiology">
+      <h2>City Hospital</h2>
+      <p><strong>Department:</strong> Cardiology</p>
+      <p><strong>Address:</strong> 123 Main Street</p>
+      <p><strong>Phone:</strong> +1 555-1234</p>
+      <a href="https://example.com" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="hospital-card" data-dept="orthopedics">
+      <h2>Green Valley Medical</h2>
+      <p><strong>Department:</strong> Orthopedics</p>
+      <p><strong>Address:</strong> 45 Health Ave</p>
+      <p><strong>Phone:</strong> +1 555-5678</p>
+      <a href="https://example.com" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="hospital-card" data-dept="dentistry">
+      <h2>Smile Dental Clinic</h2>
+      <p><strong>Department:</strong> Dentistry</p>
+      <p><strong>Address:</strong> 99 Tooth Lane</p>
+      <p><strong>Phone:</strong> +1 555-8765</p>
+      <a href="https://example.com" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="hospital-card" data-dept="icu emergency">
+      <h2>Sunrise Hospital</h2>
+      <p><strong>Departments:</strong> ICU, Emergency</p>
+      <p><strong>Address:</strong> 12 Care Road</p>
+      <p><strong>Phone:</strong> +1 555-4321</p>
+      <a href="https://example.com" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="hospital-card" data-dept="maternity pregnancy">
+      <h2>Mother Care Clinic</h2>
+      <p><strong>Department:</strong> Maternity & Pregnancy</p>
+      <p><strong>Address:</strong> 7 Baby Street</p>
+      <p><strong>Phone:</strong> +1 555-2222</p>
+      <a href="https://example.com" target="_blank">Visit Website</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Hospital Finder | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
